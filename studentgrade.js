@@ -4,6 +4,9 @@
             // :>=49 && <= 59 performance to be "C";
             // ;>=40 && < 49 Performance to be "D";
             // :<40 && >=0 performance to be "E"
+const grade = prompt("Pass your mark:");
+Grade(Marks)
+
 
 function Grade(Marks){
     if(Marks>= 0 && Marks < 40){ //range =0 to 39
@@ -19,5 +22,5 @@ function Grade(Marks){
     }else{
         console.log("Invalid mark")
     }
-
+    document.getElementById("output").innerHTML = performance
 }
