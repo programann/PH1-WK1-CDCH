@@ -9,18 +9,23 @@ Grade(Marks)
 
 
 function Grade(Marks){
+
+    let performance = "Y";
+
     if(Marks>= 0 && Marks < 40){ //range =0 to 39
-        console.log(performance = "E");
+        performance= "E";
     }else if(Marks >= 40 && Marks < 49){ // range =40 to 48
-        console.log(Performance = "D");
+        performance = "D";
     }else if(Marks >= 49 && Marks <= 59){ // range = 49 to 59
-        console.log(Performance = "C");
+        performance = "C";
     }else if(Marks >= 60 && Marks <= 79){ // range = 60 to 79
-        console.log(performance = "B");
+        performance = "B";
     }else if(Marks > 79 && Marks<= 100){ // range 80 to 100
-        console.log(performance = "A");
+        performance = "A";
     }else{
-        console.log("Invalid mark")
+        performance = "Invalid mark"
     }
-    document.getElementById("output").innerHTML = performance
+    return performance
+    document.getElementById("output").innerHTML = performance 
 }
+console.log(Grade(65))
