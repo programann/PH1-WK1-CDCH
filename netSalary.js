@@ -1,32 +1,32 @@
 function netSalary(grossSalary){
 
-    let clusterTax = 0;
-    let grossTax = 0;
-    let rated = 0; 
+    let classTax= 0;
+    let netIncome = 0; 
+    let classWidth = 0;
 
     if(grossSalary > 0 && grossSalary <= 24000){
-        grossTax = (grossSalary*0.10);
-        netIncome = grossSalary - grossTax;
-    }else if (grossSalary >= 24001 && grossSalary <= 32333){
-        rated = (grossSalary - 24000) * 0.25;
-        grossTax = 2400 + rated
-        clusterTax = grossSalary-grossTax;
-    }else if (grossSalary >= 32334 && grossSalary <= 500000){
-        rated = (grossSalary - 32333) * 0.30;
-        grossTax = 2400 + 2083.25 + rated
-        clusterTax = grossSalary-grossTax;
-    }else if (grossSalary >= 500001 && grossSalary <= 800000){
-        rated = (grossSalary - 500000) * 0.325;
-        grossTax = 2400 + 2083.25 + 140300.1 + rated
-        clusterTax = grossSalary-grossTax;  
+        classTax = grossSalary*0.1
+        netIncome = grossSalary - classTax
+    }else if(grossSalary >= 24001 && grossSalary <= 32333){
+        classWidth = grossSalary - 24000;
+        classTax = 2400 + ( classWidth * 0.25);
+        netIncome = grossSalary - classTax;
+    }else if(grossSalary >= 32334 && grossSalary <= 500000){
+        classWidth = grossSalary - 32333;
+        classTax = 4483.25 + ( classWidth * 0.3);
+        netIncome = grossSalary - classTax;
+    }else if(grossSalary >= 500001 && grossSalary <= 800000){
+        classWidth = grossSalary - 500000;
+        classTax = 144783.35 + (classWidth * 0.325);
+        netIncome = grossSalary - classTax;
     }else if(grossSalary > 800000){
-        rated = (grossSalary- 800000) * 0.35;
-        grossTax = 2400 + 2083.25 + 140300.1 + 97500 + rated
-        clusterTax = grossSalary-grossTax;
+        classWidth = grossSalary - 800000;
+        classTax = 242283.35 + (classWidth * 0.35);
+        netIncome = grossSalary - classTax;
     }
-    return clusterTax;
+    return netIncome;
 }
-console.log(tax(45000))
+
 
  
 
