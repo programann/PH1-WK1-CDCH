@@ -29,6 +29,5 @@ function salary(grossSalary){
     }
     //2400 is tax relief
    return" PAYE:" + classTax + "; Net Salary: " + grossIncome
-   
-        
+         
 }

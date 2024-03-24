@@ -28,4 +28,3 @@ function Grade(Marks){
     return performance
     document.getElementById("output").innerHTML = performance 
 }
-console.log(Grade(65))
