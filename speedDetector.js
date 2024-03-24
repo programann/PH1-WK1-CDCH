@@ -5,7 +5,7 @@
 //For every 5 km/h driver is issued one demerit point
 //Should return suspend license if total demerit points exceed 12 points
 function speedDetector(speedInput){
-    let output = ""
+    let output = "null"
     let demerits;
 
     if(speedInput < 0){
@@ -29,3 +29,4 @@ function speedDetector(speedInput){
     return output;
 
 }
+console.log(speedDetector(40))
