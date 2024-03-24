@@ -1,5 +1,6 @@
 //function accept a speed input
-
+const speed = prompt("Inser speed")
+speedDetector(speed)
 //should return ok if speed <= 70 it should return "OK"
 //Return the number of demerit points per 5km/h over the speed limit which is 70km/h
 //For every 5 km/h driver is issued one demerit point
@@ -27,6 +28,5 @@ function speedDetector(speedInput){
           }
     }
     return output;
-
+    document.getElementById("output").innerHTML = output
 }
-console.log(speedDetector(40))

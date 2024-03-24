@@ -5,7 +5,7 @@
             // ;>=40 && < 49 Performance to be "D";
             // :<40 && >=0 performance to be "E"
 const grade = prompt("Pass your mark:");
-Grade(Marks)
+Grade(grade)
 
 
 function Grade(Marks){
