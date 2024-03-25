@@ -1,5 +1,5 @@
 //function accept a speed input
-const speed = prompt("Inser speed")
+const speed = prompt("Insert speed")
 speedDetector(speed)
 //should return ok if speed <= 70 it should return "OK"
 //Return the number of demerit points per 5km/h over the speed limit which is 70km/h

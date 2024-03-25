@@ -2,12 +2,13 @@ function show(value){
     console.log(value);
 }
 
-
+//CALCULATION OF THE BENEFITS AND DEDUCTIONS TO PROVIDE THE TAXABLE INCOME.
 function deductions(grossSalary, benefits){
     let nssf = 0;
     let nhif = 0;
 
     function NHIFded(grossSalary, benefits = 0){
+      //NHIF deductions
         let  nhifDeduction = 0
      
          if (grossSalary > 0  && grossSalary <= 5999){
@@ -68,9 +69,7 @@ function deductions(grossSalary, benefits){
          else if (grossSalary >= 100000){
            nhifDeduction =1700
          }
-     
-         // nssf = (benefits > 0 ) ? benefit : grossSalary * 0.06;
-     
+    
          if(benefits > 0){
              nssf = benefits;
          }else{
@@ -84,7 +83,7 @@ function deductions(grossSalary, benefits){
                  taxableIncome, 
              }
     }    
-
+    //Using the taxable income to get the PAYE
     function salary(taxableIncome){
 
         let classTax= 0;
