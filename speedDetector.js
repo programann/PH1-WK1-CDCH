@@ -30,3 +30,4 @@ function speedDetector(speedInput){
     return output;
     document.getElementById("output").innerHTML = output
 }
+
